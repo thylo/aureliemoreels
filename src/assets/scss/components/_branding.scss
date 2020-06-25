@@ -1,0 +1,24 @@
+.c-branding {
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: $color-white;
+    font-weight: 200;
+  }
+  &__block{
+    text-align: center;
+  }
+  &__name {
+    background: $color-medium-green;
+    display: block;
+    @include inuit-font-size($inuit-font-size-h1);
+    padding: $inuit-global-spacing-unit;
+  }
+
+  &__instrument {
+    padding: $inuit-global-spacing-unit-small;
+    display: block;
+    background: $color-light-green;
+    @include inuit-font-size($inuit-font-size-h3);
+  }
+}

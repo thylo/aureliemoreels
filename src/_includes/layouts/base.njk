@@ -1,21 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="/css/index.min.css">
-    <title>Thylo.be</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Aurélie Moreels | Accueil</title>
+    <meta name="description" content="Aurélie Moreels soprano colorature">
+    <meta name="keywords"
+          content="Aurélie Moreels,aurelie,aurélie,moreels,soprano,coloratura,colorature,classical,music,classical music">
+    <link rel="icon" type="image/png" href="http://aureliemoreels.be/favicon.gif">
+    <meta property="og:title" content="Aurélie Moreels | Accueil">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="be_FR">
+    <meta property="og:description" content="Aurélie Moreels - Soprano colorature">
+    <meta property="og:url" content="http://aureliemoreels.be">
+
+    <link href="/css/index.min.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-<nav class="c-primary-nav">
-    <ul class="o-list-bare c-primary-nav__list l-container">
-        <li class="c-primary-nav__item"><a class="c-primary-nav__link c-primary-nav__brand" href="/">thylo<span
-                        class="u-color-accent">.be</span></a></li>
-        <li class="c-primary-nav__item"><a class="c-primary-nav__link" href="/about.html">About</a></li>
-    </ul>
-</nav>
+<body class="js-nav-hidden">
+<div class="o-page u-position-relative">
+    {% include "partials/header.njk" %}
+</div>
 {% block content %}{% endblock %}
+
+
+<footer class="o-page u-text-align--center cf" role="contentinfo">
+    <div class="copyright o-box o-box--large u-pl0 u-pr0 u-contrast">
+        <p>© 2020 Aurélie Moreels</p>
+    </div>
+</footer>
+
+<script src="/js/main.bundle.js"></script>
+
 </body>
 </html>
