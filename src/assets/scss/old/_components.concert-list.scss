@@ -1,0 +1,12 @@
+.c-concert-list{
+  @extend .o-list-ui;
+  border-top: none;
+
+  .c-concert-list__item{
+    border:none;
+    padding: 0;
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+}

@@ -1,0 +1,4 @@
+@mixin shadow($blur:22px,$spread:2px,$color:rgba(0,0,0,.25),$border-color : lighten($black,0)){
+  border:1px solid $border-color;
+  box-shadow: 0px 0px $blur $spread $color;
+}

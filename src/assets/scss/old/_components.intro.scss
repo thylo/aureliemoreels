@@ -1,0 +1,10 @@
+.c-intro{
+  color: $white;
+  display: none;
+  @include media-query(portable){
+    @extend .o-box;
+    position: absolute;
+    width: 300px;
+    bottom: $inuit-base-spacing-unit;
+  }
+}

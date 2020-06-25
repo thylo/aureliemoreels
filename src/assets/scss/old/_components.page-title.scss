@@ -1,0 +1,15 @@
+$page-title-offset : -1rem;
+.c-page-title{
+  @extend .o-box;
+  @extend .o-box--secondary;
+  margin: $inuit-base-spacing-unit auto;
+  width: $home-page-branding-width;
+  text-align: center;
+  @include media-query(lap-and-up){
+    position: absolute;
+    top:$page-title-offset;
+    left: $page-title-offset;
+  }
+
+  z-index: 10;
+}

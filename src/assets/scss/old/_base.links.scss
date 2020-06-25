@@ -1,0 +1,9 @@
+a {
+  color:$medium-green;
+}
+/*links inside a header should not be underlined*/
+h1,h2,h3,h4,h5,h6{
+  a{
+    text-decoration: none;
+  }
+}

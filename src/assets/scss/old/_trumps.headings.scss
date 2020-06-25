@@ -1,0 +1,5 @@
+.u-black-headings{
+  @include headings{
+    color: $black;
+  }
+}

@@ -1,0 +1,27 @@
+.c-concerts{
+  @extend .o-box;
+  @extend .o-box--white;
+  margin: $inuit-base-spacing-unit;
+  @include media-query(lap-and-up) {
+    margin: auto;
+    width: 75%;
+    transform: translate(0,-20%);
+  }
+}
+
+.c-concert{
+  @include inuit-font-size($inuit-heading-size-6);
+  h4{
+    border-top:1px solid #CCCCCC;
+    padding-top: $inuit-box-padding--small;
+    margin-top: 0;
+  }
+}
+
+.c-concert-title{
+  @include inuit-font-size($inuit-heading-size-2);
+  margin-bottom: $inuit-box-padding--small;
+}
+.c-concert-date{
+  margin-bottom: $inuit-box-padding--tiny;
+}

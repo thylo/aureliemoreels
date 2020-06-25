@@ -1,0 +1,18 @@
+.o-form-required{
+  color: $red;
+}
+
+.o-field-group{
+
+}
+.o-field-group__label{
+  display: block;
+  margin-bottom: $inuit-base-spacing-unit--small;
+}
+
+.o-field-group__input{
+  display: block;
+  width: 100%;
+  padding: $inuit-base-spacing-unit--small;
+  border: 1px solid $medium-gray;
+}

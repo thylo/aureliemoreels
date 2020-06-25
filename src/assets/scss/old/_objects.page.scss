@@ -1,0 +1,6 @@
+$page-width : 1280px !default;
+.o-page{
+  max-width: 1280px;
+  margin: auto;
+  @extend .u-clearfix;
+}
