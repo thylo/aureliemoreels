@@ -1,14 +1,20 @@
-const friends = require("./src/_data/friends.json");
+const md = require("markdown-it")();
+
+const sizes = [
+  { res: "_600x600", target: "600w" },
+  { res: "_800x600", target: "800w" },
+  { res: "_1024x576", target: "1024w" },
+];
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addShortcode("friend", (slug) => {
-    const friend = friends.find((f) => f.slug === slug);
-    if (!friend) {
-      return `<span style='color:red'>${slug}</span>`;
-    }
-    return `<a href="${friend.link}" target="_blank">${friend.name}</a>`;
-  });
-
+  eleventyConfig.addFilter("md", (text) => text && md.render(text));
+  eleventyConfig.addShortcode(
+    "img",
+    (dir, file, {className="", alt = ""}) =>
+      `<img src="/img/${dir}/${file}" class="${className}" srcset="${sizes.map(
+        (size) => `/img/${dir}/${size.res}/${file} ${size.target}`
+      )}" alt="${alt}"/>`
+  );
   // Base config
   return {
     passthroughFileCopy: true,

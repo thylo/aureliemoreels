@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "inuitcss": "^6.0.0",
+    "markdown-it": "^11.0.0",
     "prettier": "^2.0.5",
     "sass-mq": "^5.0.1",
     "source-sans-pro": "^3.6.0",

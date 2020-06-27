@@ -7,8 +7,8 @@ const sharp = require("sharp");
 // specify transforms
 const transforms = [
   {
-    src: "./src/assets/img/blogposts/*",
-    dist: "./dist/img/blogposts/_1024x576/",
+    src: "./src/assets/img/biography/*",
+    dist: "./dist/img/biography/_1024x576/",
     options: {
       width: 1024,
       height: 576,
@@ -16,8 +16,8 @@ const transforms = [
     },
   },
   {
-    src: "./src/assets/img/blogposts/*",
-    dist: "./dist/img/blogposts/_600x600/",
+    src: "./src/assets/img/biography/*",
+    dist: "./dist/img/biography/_600x600/",
     options: {
       width: 600,
       height: 600,
@@ -25,8 +25,8 @@ const transforms = [
     },
   },
   {
-    src: "./src/assets/img/projects/*",
-    dist: "./dist/img/projects/_800x600/",
+    src: "./src/assets/img/biography/*",
+    dist: "./dist/img/biography/_800x600/",
     options: {
       width: 800,
       height: 600,

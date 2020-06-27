@@ -1,0 +1,15 @@
+<div class="o-wrapper">
+    <ul class="o-list-bare">
+        {% for item in biography %}
+            <li class="o-list-bare__item l-biography u-margin-vertical-large">
+                {% img 'biography', item.image, {className : "l-biography__image"} %}
+                <div class="l-biography__content o-box u-bg-white">
+                    {% if (item.title) %}
+                        <h1>{{ item.title }}</h1>
+                    {% endif %}
+                    <div>{{ item.text | md | safe }}</div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
