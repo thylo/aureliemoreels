@@ -1,6 +1,6 @@
 .l-biography {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, minmax(1fr, 20rem));
   grid-template-rows: 1fr;
   &__image {
     grid-column-start: 1;

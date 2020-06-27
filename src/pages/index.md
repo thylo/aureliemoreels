@@ -15,7 +15,7 @@ biography:
         En 2010, elle termine son Master en chant avec grande distinction au Conservatoire Royal de Musique de Bruxelles et est récompensée par le prix Alice Tyckaert. Elle y suit des cours de chant avec Marcel Vanaud. Durant son parcours, elle reçoit également l’enseignement, entre autres, de Céline Scheen, Nadine Denize, Thibaut Lenaerts et Christine Solhosse.
         Elle se forme également à la musique ancienne sous l'oreille attentive de Bernard Woltèche.
         En 2008, elle remporte le second prix « Jacques Dôme » à Verviers.
-    - image: img_0290_1-d4f537ed31d8b0c7a438639936678c03.jpg
+    - image: img_3.jpg
       text: |
         Aurélie commence sa carrière par des prestations solistes dans le domaine de l’oratorio. En effet, elle s’est distinguée dans le Requiem, la Messe en Ut mineur, La Messe en Ut (KV 317), l’Exsultate, Jubilate, les Vêpres Solennelles d’un confesseur de W.A.Mozart ; le Gloria, Magnificat, Beatus vir, Laudate Pueri de Vivaldi ; le Magnificat, Weihnachts-Oratorium, les Passions de Bach ; le Dixit Dominus, Laudate Pueri Dominum de Haendel ; L’Oratorio de Noël de Saint-Saens ; la Messe de Minuit de Charpentier ; ...
         
