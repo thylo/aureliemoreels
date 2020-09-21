@@ -1,69 +1,60 @@
+@import "./fonts/source-sans-pro";
+@import "./fonts/source-serif-pro";
 
-// SETTINGS
-@import "settings/typography";
-@import "settings/config";
-@import "settings/global";
-@import "../../../node_modules/inuitcss/settings/settings.core";
+$color-primary: #537C06;
 
-// TOOLS
-@import "../../../node_modules/inuitcss/tools/tools.font-size";
-@import "../../../node_modules/inuitcss/tools/tools.clearfix";
-@import "../../../node_modules/inuitcss/tools/tools.hidden";
-@import "../../../node_modules/inuitcss/node_modules/sass-mq/mq";
-@import "tools/shadow";
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 20px;
+}
 
-// GENERIC
-@import "../../../node_modules/inuitcss/generic/generic.box-sizing";
-@import "../../../node_modules/inuitcss/generic/generic.normalize";
-@import "../../../node_modules/inuitcss/generic/generic.reset";
-@import "../../../node_modules/inuitcss/generic/generic.shared";
+.c-branding {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 0 40px 0;
 
-// ELEMENTS
-@import "../../../node_modules/inuitcss/elements/elements.page";
-@import "../../../node_modules/inuitcss/elements/elements.headings";
-@import "../../../node_modules/inuitcss/elements/elements.images";
-@import "../../../node_modules/inuitcss/elements/elements.tables";
-@import "elements/page";
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
 
-// OBJECTS
-//
-// Uncomment and add to this section as necessary.
-@import "../../../node_modules/inuitcss/objects/objects.wrapper";
-@import "../../../node_modules/inuitcss/objects/objects.layout";
-@import "../../../node_modules/inuitcss/objects/objects.media";
-@import "../../../node_modules/inuitcss/objects/objects.flag";
-@import "../../../node_modules/inuitcss/objects/objects.list-bare";
-@import "../../../node_modules/inuitcss/objects/objects.list-inline";
-@import "../../../node_modules/inuitcss/objects/objects.box";
-@import "../../../node_modules/inuitcss/objects/objects.block";
-@import "../../../node_modules/inuitcss/objects/objects.ratio";
-@import "../../../node_modules/inuitcss/objects/objects.crop";
-@import "../../../node_modules/inuitcss/objects/objects.table";
-@import "../../../node_modules/inuitcss/objects/objects.pack";
-@import "objects/shadow";
+  &__name {
+    color: $color-primary;
+    display: block;
+  }
+}
 
-// COMPONENTS
-//
-// Build and include your project’s UI components here.
-@import "components/branding";
-@import "components/branding";
+.l-hero {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50% auto 1fr;
+  padding: 2rem;
+  box-sizing: border-box;
+  gap: 16px;
 
-//Layouts
-@import "layouts/biography";
-@import "layouts/hero";
+  &__brand {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
 
-// UTILITIES
-@import "../../../node_modules/inuitcss/utilities/utilities.clearfix";
-
-// Be aware that enabling offsets produces a large chunk of classes which might
-// bloat your CSS, depending of the amount of breakpoints you defined.
-// Only set this to `true` if you are absolutely sure about what you are doing.
-$inuit-offsets: true;
-@import "../../../node_modules/inuitcss/utilities/utilities.widths";
-@import "../../../node_modules/inuitcss/utilities/utilities.headings";
-@import "../../../node_modules/inuitcss/utilities/utilities.spacings";
-@import "../../../node_modules/inuitcss/utilities/utilities.responsive-spacings";
-@import "../../../node_modules/inuitcss/utilities/utilities.print";
-@import "../../../node_modules/inuitcss/utilities/utilities.hide";
-
-@import "utilities/backgrounds";
+  &__image {
+    overflow: hidden;
+    grid-column: 4 / 7;
+    grid-row: 1 / 4;
+    background-image: url('/img/home/IMG_0471.jpeg');
+    background-size: cover;
+    background-position: bottom;
+  }
+  &__copyright{
+    grid-column: 7 / 13;
+    grid-row: 3 / 4;
+    align-self: end;
+    justify-self: end;
+  }
+}

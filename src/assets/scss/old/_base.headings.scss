@@ -1,6 +1,0 @@
-$base-title-color: $white;
-
-@include headings{
-  @include font-title(300);
-  color: $base-title-color;
-}

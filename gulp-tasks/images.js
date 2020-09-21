@@ -33,6 +33,24 @@ const transforms = [
       fit: "cover",
     },
   },
+  {
+    src: "./src/assets/img/home/*",
+    dist: "./dist/img/home/_1024x576/",
+    options: {
+      width: 1024,
+      //height: 576,
+      //fit: "cover",
+    },
+  },
+  {
+    src: "./src/assets/img/home/*",
+    dist: "./dist/img/home/_800x600/",
+    options: {
+      width: 800,
+      height: 600,
+      fit: "cover",
+    },
+  },
 ];
 
 // resize images
