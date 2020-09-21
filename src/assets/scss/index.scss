@@ -1,9 +1,19 @@
+$mq-breakpoints: (
+  mobile: 320px,
+  tablet: 740px,
+  desktop: 980px,
+  wide: 1300px,
+);
+
+@import "../../../node_modules/sass-mq/mq";
+
 @import "./fonts/source-sans-pro";
 @import "./fonts/source-serif-pro";
 
-$color-primary: #537C06;
+$color-primary: #537c06;
 
-body, html {
+body,
+html {
   padding: 0;
   margin: 0;
   height: 100%;
@@ -31,30 +41,40 @@ body, html {
 
 .l-hero {
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 50% auto 1fr;
   padding: 2rem;
   box-sizing: border-box;
-  gap: 16px;
+
+  @include mq($from: tablet) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50% auto 1fr;
+    gap: 16px;
+  }
 
   &__brand {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
+    @include mq($until: tablet) {
+      padding: 2rem 0;
+    }
   }
 
   &__image {
     overflow: hidden;
     grid-column: 4 / 7;
     grid-row: 1 / 4;
-    background-image: url('/img/home/IMG_0471.jpeg');
+    background-image: url("/img/home/IMG_0471.jpeg");
     background-size: cover;
     background-position: bottom;
+    min-height: 20rem;
   }
-  &__copyright{
+  &__copyright {
     grid-column: 7 / 13;
     grid-row: 3 / 4;
     align-self: end;
     justify-self: end;
+    @include mq($until: tablet) {
+      padding: 2rem 0;
+    }
   }
 }
